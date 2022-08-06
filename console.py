@@ -163,7 +163,7 @@ class HBNBCommand(cmd.Cmd):
         arg = ' '.join(tok).replace(',', '')
         try:
             eval('self.do_' + cmd + '(arg)')
-        except:
+        except Exception:
             print("** invalid command **")
 
     def do_count(self, args):
@@ -204,6 +204,7 @@ class HBNBCommand(cmd.Cmd):
         Returns back to the prompt
         """
         return
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()

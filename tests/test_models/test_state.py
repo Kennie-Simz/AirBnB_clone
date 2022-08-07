@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-module contains test
+"""module contains test
 for state
 """
 import unittest
